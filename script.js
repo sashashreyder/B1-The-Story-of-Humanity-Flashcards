@@ -20,7 +20,6 @@ const container = document.querySelector('.card-container');
 /* ---------- RENDER CARD ---------- */
 function renderCard(idx) {
   const { prompt, hint } = data[idx];
-  container.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   container.innerHTML = `
     <div class="card">
@@ -40,11 +39,13 @@ function renderCard(idx) {
       <p class="feedback" id="feedback"></p>
     </div>`;
 
-  document.getElementById('answerInput').focus();
+  // focus removed to prevent page jump
+  // document.getElementById('answerInput').focus();
+
   document.getElementById('submitBtn').addEventListener('click', checkAnswer);
   document.getElementById('nextBtn').addEventListener('click', nextCard);
 
-  // Mobile click handler for tooltips
+  // Mobile tooltip toggle
   if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) {
     const qmark = document.querySelector('.qmark');
     qmark.addEventListener('click', e => {
@@ -65,14 +66,9 @@ function checkAnswer() {
   const user    = inp.value.trim().toLowerCase();
   const correct = data[current].answer.toLowerCase();
 
-  if (user === correct) {
-    fb.textContent = '✓ Correct!';
-    fb.className   = 'feedback correct';
-    score++;
-  } else {
-    fb.textContent = `✗ ${correct}`;
-    fb.className   = 'feedback incorrect';
-  }
+  fb.textContent = user === correct ? '✓ Correct!' : `✗ ${correct}`;
+  fb.className   = 'feedback ' + (user === correct ? 'correct' : 'incorrect');
+  if (user === correct) score++;
 
   document.getElementById('nextBtn').classList.add('show');
 }
