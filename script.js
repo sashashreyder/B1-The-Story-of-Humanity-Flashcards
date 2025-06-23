@@ -61,7 +61,7 @@ function renderCard(idx) {
 function checkAnswer() {
   const inp = document.getElementById('answerInput');
   const fb  = document.getElementById('feedback');
-  if (!inp) return;
+  if (!inp || fb.textContent) return; // prevent double scoring
 
   const user    = inp.value.trim().toLowerCase();
   const correct = data[current].answer.toLowerCase();
@@ -109,6 +109,7 @@ container.addEventListener('keydown', e => {
 
 /* ---------- INIT ---------- */
 renderCard(current);
+
 
 
 
