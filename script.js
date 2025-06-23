@@ -8,7 +8,7 @@ const data = [
   { word: 'Barbaric', prompt: '___ punishments were used in medieval times.', answer: 'Barbaric', hint: 'Extremely cruel/uncivilized.' },
   { word: 'Progressive', prompt: '___ laws support gender equality.', answer: 'Progressive', hint: 'Favoring social reform.' },
   { word: 'Cultural appropriation', prompt: 'Using sacred symbols as fashion is ___.', answer: 'Cultural appropriation', hint: 'Adopting elements of a culture unfairly.' },
-  { word: 'shape the course of history', prompt: 'Wars ___ the course of history.', answer: 'shape the course of history', hint: 'To influence major events.' }
+  { word: 'shape', prompt: 'Wars ___ the course of history.', answer: 'shape', hint: 'To influence major events.' }
 ];
 
 
