@@ -2,13 +2,13 @@ const data = [
   { word: 'Cohesion', prompt: 'Social ___ helps communities thrive.', answer: 'Cohesion', hint: 'Unity within a group/society.' },
   { word: 'Democracy', prompt: '___ allows citizens to choose leaders.', answer: 'Democracy', hint: 'Rule by the people through voting.' },
   { word: 'Hierarchy', prompt: 'Feudal ___ placed kings above peasants.', answer: 'Hierarchy', hint: 'A system with ranked social groups.' },
-  { word: 'To emancipate', prompt: 'Lincoln ___ enslaved people in the U.S.', answer: 'To emancipate', hint: 'To free from oppression.' },
-  { word: 'To institutionalize', prompt: 'Education was ___ in modern states.', answer: 'To institutionalize', hint: 'To make part of a system.' },
-  { word: 'To preserve', prompt: 'Museums ___ ancient artifacts.', answer: 'To preserve', hint: 'To protect from loss.' },
+  { word: 'emancipate', prompt: 'Lincoln ___ enslaved people in the U.S.', answer: 'emancipate', hint: 'To free from oppression.' },
+  { word: 'institutionalize', prompt: 'Education was ___ in modern states.', answer: 'institutionalize', hint: 'To make part of a system.' },
+  { word: 'preserve', prompt: 'Museums ___ ancient artifacts.', answer: 'preserve', hint: 'To protect from loss.' },
   { word: 'Barbaric', prompt: '___ punishments were used in medieval times.', answer: 'Barbaric', hint: 'Extremely cruel/uncivilized.' },
   { word: 'Progressive', prompt: '___ laws support gender equality.', answer: 'Progressive', hint: 'Favoring social reform.' },
   { word: 'Cultural appropriation', prompt: 'Using sacred symbols as fashion is ___.', answer: 'Cultural appropriation', hint: 'Adopting elements of a culture unfairly.' },
-  { word: 'To shape the course of history', prompt: 'Wars ___ the course of history.', answer: 'To shape the course of history', hint: 'To influence major events.' }
+  { word: 'shape the course of history', prompt: 'Wars ___ the course of history.', answer: 'shape the course of history', hint: 'To influence major events.' }
 ];
 
 
